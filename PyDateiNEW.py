@@ -1,4 +1,4 @@
-das hier behebt den testissue???
+# das hier behebt den testissue???
 #und dasd den zweiten automatisch
 
 def n2_wochenendeAmSee():
@@ -13,8 +13,10 @@ def n2_wochenendeAmSee():
     for element in personen:  # durch gesamte Liste mit Einkäufen iterieren
         if element not in einkaufsliste:
             einkaufsliste[element] = 1
+        elif element in einkaufsliste:
+            print("added!")
         else:
-            einkaufsliste[element] += 1
+            print("changed!!!")
 
     # Dict printen
     print()
