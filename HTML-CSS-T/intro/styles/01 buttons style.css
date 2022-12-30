@@ -1,0 +1,96 @@
+/* für alle Buttons */
+button {
+  margin: 10px 5px;
+}
+
+.subscribe { /* Klassen beginnen mit . */
+  background-color: rgb(191, 0, 0);
+  color: white;
+  border: none;
+  /* height: 35px;
+  width: 105px; */
+  padding: 10px 20px; /* oben/unten L/R */ /* besser statt height und width */
+  border-radius: 5px; /* bei Hovern Pointer aktivieren */
+  cursor: pointer;
+  /* in normale Klasse und nicht hover oder active, sonst funktioniert Rück-Animation nicht */
+  transition: opacity 0.1s; /* WAS WIE-SCHNELL */
+}
+
+.subscribe:hover {
+  opacity: 0.8;
+}
+
+.subscribe:active {
+  opacity: 0.5;
+}
+
+.join {
+  background-color: white;
+  color: rgb(0, 145, 255);
+  border:rgb(0, 145, 255) solid 1px;
+  border-radius: 2px;
+  padding: 9px 19px; /* 9 statt 10  und 19 statt 20wie bei Subscribe, da border 1px */
+  cursor: pointer;
+  transition:
+    color .5s,
+    background-color .5s;
+}
+
+.join:hover {
+  background-color: rgb(0, 145, 255);
+  color: white;
+}
+
+.join:active {
+  opacity: 0.8;
+}
+
+.tweet {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 70px;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: box-shadow .5s;
+}
+
+.tweet:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .2); /* X Y BLUR COLOR */
+}
+
+.tweet:active {
+  opacity: .8;
+}
+
+.oben {
+  vertical-align: top;
+}
+
+.one23 {
+  background-color:#ffd771;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  transition:
+    background-color .15s,
+    color .15s,
+    box-shadow .15s,
+    padding .15s;
+}
+
+.one23:hover {
+  background-color: rgb(190, 142, 20);
+  color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+  padding: 10px 30px;
+}
+
+.one23:active {
+  padding: 8px 25px;
+  background-color: rgb(144, 103, 0);
+}

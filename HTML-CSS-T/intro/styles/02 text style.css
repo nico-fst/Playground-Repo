@@ -1,0 +1,44 @@
+/* bezieht sich auf jeden freien (?) Text */
+p {
+    font-family: "Avenir Next";
+    text-align: left;
+    width: 70%;
+}
+
+/* Class höhere Priorität als Selector */
+.yt_title {
+    font-size: 30px;
+    font-weight: bold;
+    /* line-height: 1.5em; */
+    margin-bottom: 0;
+}
+
+.video-stats {
+    color: gray;
+    margin-top: 0;
+}
+
+.description {
+    line-height: 1.5em;
+    font-family: "Roboto Mono", monospace;
+}
+
+.apple_shop {
+    font-size: 14px;
+    background-color: rgb(227, 65, 64);
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+.apple_link {
+    margin-left: 10px; /* löst Problem, dass mehrere Leerzeichen ignoriert */
+    text-decoration: none;
+    transition: text-decoration .5s;
+    font-weight: bold;
+}
+
+.apple_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
