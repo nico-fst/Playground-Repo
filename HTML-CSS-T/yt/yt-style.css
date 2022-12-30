@@ -50,14 +50,11 @@ p {
 }
 
 .channel-picture {
-	display: inline-block;
-	width: 50px;
-	vertical-align: top;
+	background-color: lightpink;
 }
 
 .video-info {
-	display: inline-block;
-	width: 200px;
+	background-color: lightblue;
 }
 
 .profile-picture {
@@ -68,4 +65,9 @@ p {
 
 .thumbnail-row {
 	margin-bottom: 15px;
+}
+
+.video-info-grid {
+	display: grid;
+	grid-template-columns: 50px 1fr;
 }

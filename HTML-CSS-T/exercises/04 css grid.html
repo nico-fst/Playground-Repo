@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>CSS Grid</title>
+
+    </head>
+    <body style="padding-bottom: 250px;">
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px;
+        ">
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightpink;">
+                <!-- wenn in nur einem div was dazukommt, werden beide divs in Größe angepasst :) -->
+                div 2
+                <p>text</p>
+            </div>
+        </div>
+
+
+        <!-- # Zahlen in grid-template-columns = #Columns -->
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px 200px;
+            margin-top: 30px;
+        ">
+            <div style="background-color: lightblue;">100px</div>
+            <div style="background-color: lightpink;">
+                100px
+                <p>text</p>
+            </div>
+            <div style="background-color: rgb(184, 254, 184);">200px</div>
+            <!-- div mehr als in template-columns angegeben => in nächster Zeile -->
+            <div style="background-color: rgb(255, 255, 135);">
+                100px
+                <p>Hier ganz viel Text Lorem</p>
+            </div>
+            <div style="background-color: rgb(252, 178, 237);">100px</div>
+        </div>
+
+        <!-- fr = Rest von Zeile -->
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            margin-top: 30px;
+        ">
+            <div style="background-color: lightblue;">100px</div>
+            <div style="background-color: lightpink;">1fr</div>
+        </div>
+
+        <!-- 1fr und 2fr => 1fr bekommt 1/3 und 2fr 2/3 -->
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;
+            margin-top: 30px;
+        ">
+            <div style="background-color: lightblue;">100px</div>
+            <div style="background-color: lightpink;">1fr</div>
+            <div style="background-color: rgb(103, 239, 196);">2fr</div>
+        </div>
+
+        <div style="
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 30px;
+            column-gap: 20px;
+            row-gap: 40px;
+        ">
+            <div style="background-color: lightblue; height: 200px;">100px</div>
+            <div style="background-color: lightpink;">1fr</div>
+            <div style="background-color: rgb(103, 239, 196);">1fr</div>
+
+            <div style="background-color: lightblue; height: 200px;">100px</div>
+            <div style="background-color: lightpink;">1fr</div>
+            <div style="background-color: rgb(103, 239, 196);">1fr</div>
+        </div>
+    </body>
+</html>
